@@ -1,6 +1,9 @@
 body {
     margin: 0;
-    text-align: center;
+}
+
+div {
+    padding: 0 100px;
 }
 
 .header, .content-one, .footer {
@@ -14,22 +17,68 @@ body {
 .header p {
     font-size: 24px;
     color: #f9faf8;
+    font-weight: bold;
 }
 
 h1 {
     font-size: 48px;
     font-weight: extra-bold;
     color: #f9faf8;
+
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #e5e7eb;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+
+    display: flex;
+    gap: 15px;
 }
 
 button {
     background-color: #3882f6;
+    border-radius: 4px;
+    padding: 5px 15px;
+    color: #f9faf8;
+    border: none;
+    font-weight: bold;
 }
 
 h2 {
     font-size: 36px;
     font-weight: extra-bold;
     color: #1f2937;
+}
+
+.header {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-one {
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: flex-start;
+    gap: 20px;
+    
+}
+
+.content-one img {
+    width: 300px;
+    height: 200px;
+    flex: 1;
+}
+
+.container {
+    padding: 0;
+    flex: 1;
 }
 
 .content-two {
@@ -52,15 +101,6 @@ h2 {
     background-color: #3882f6;
 
     display: flex;
-}
-
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
 }
 
 img {
