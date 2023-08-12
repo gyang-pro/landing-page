@@ -1,11 +1,14 @@
 body {
     margin: 0;
+    text-align: center;
 }
 
 .header, .content-one, .footer {
     background-color: #1f2937;
     font-size: 18px;
     color: #e5e7eb;
+
+    display: flex;
 }
 
 .header p {
@@ -29,6 +32,14 @@ h2 {
     color: #1f2937;
 }
 
+.content-two {
+    display: flex;
+}
+
+.img-container {
+    display: flex;
+}
+
 .content-three {
     background-color: #e5e7e3;
     font-size: 36px;
@@ -39,4 +50,20 @@ h2 {
 
 .content-four {
     background-color: #3882f6;
+
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+img {
+    width: 100px;
+    height: auto;
 }
