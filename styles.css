@@ -1,9 +1,13 @@
-body {
+body, p, h1, h2 {
     margin: 0;
 }
 
-div {
-    padding: 0 100px;
+.header, .content-one, .content-four, .footer {
+    padding: 0 15%;
+}
+
+.content-two, .content-three {
+    padding: 0 22%;
 }
 
 .header, .content-one, .footer {
@@ -24,8 +28,6 @@ h1 {
     font-size: 48px;
     font-weight: extra-bold;
     color: #f9faf8;
-
-    margin: 0;
 }
 
 a {
@@ -33,12 +35,11 @@ a {
     color: #e5e7eb;
 }
 
-ul {
+.links {
     list-style-type: none;
-    padding: 0;
-
     display: flex;
-    gap: 15px;
+    gap: 20px;
+    margin: 0;
 }
 
 button {
@@ -59,14 +60,15 @@ h2 {
 .header {
     justify-content: space-between;
     align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .content-one {
-    margin: 0;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     
 }
 
@@ -77,8 +79,11 @@ h2 {
 }
 
 .container {
-    padding: 0;
     flex: 1;
+}
+
+.container p {
+    padding-bottom: 10px;
 }
 
 .content-two {
@@ -86,20 +91,23 @@ h2 {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 40px;
+    padding-top: 40px;
+    padding-bottom: 75px;
+    
 }
 
 .img-container {
     display: flex;
-    gap: 50px;
+    gap: 35px;
 }
 
-.info {
-    padding: 0;
-    max-width: 150px;
+img {
+    width: 100%;
 }
 
 .content-three {
-    background-color: #e5e7e3;
+    background-color: #e5e7eb;
     font-size: 36px;
     font-weight: light;
     font-style: italic;
@@ -117,19 +125,13 @@ h2 {
 
 .content-four {
     background-color: #3882f6;
-    margin: 75px auto;
-    width: 700px;
+    margin: 75px 15%;
     border-radius: 5px;
     color: #f9faf8;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 75px;
-}
-
-.content-four div, .content-four p {
-    padding: 0;
-    margin: 0;
+    padding: 40px 75px;
 }
 
 .content-four button {
@@ -144,9 +146,6 @@ h2 {
 .footer {
     justify-content: center;
     align-items: center;
-}
-
-img {
-    width: 150px;
-    height: 150px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
